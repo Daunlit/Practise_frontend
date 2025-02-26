@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function goToMainPage(event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="style_reg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Введіть свії дані</div>
+        <form onsubmit="goToMainPage(event)">
+            <input name="nameAndLastname" type="text" placeholder="Введіть ім`я" required>
+            <input name="email" type="email" placeholder="Введіть email" required>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</body>
+</html>
